@@ -160,12 +160,12 @@ val.result_file(output_path)
 print("Статистика:")
 print("Число валидных записей:", valid)
 print("Общее число невалидных записей:", invalid)
-print("Число невалидных записей 'email':", lst_result[0]);
-print("Число невалидных записей 'weight':", lst_result[1]);
-print("Число невалидных записей 'snils':", lst_result[2]);
-print("Число невалидных записей 'pasport_number':", lst_result[3]);
-print("Число невалидных записей 'university':", lst_result[4]);
-print("Число невалидных записей 'work_experience':", lst_result[5]);
-print("Число невалидных записей 'academic_degree':", lst_result[6]);
-print("Число невалидных записей 'worldwiew':", lst_result[7]);
-print("Число невалидных записей 'address':", lst_result[8]);
+print("Число невалидных записей 'email':", lst_result[0])
+print("Число невалидных записей 'weight':", lst_result[1])
+print("Число невалидных записей 'snils':", lst_result[2])
+print("Число невалидных записей 'pasport_number':", lst_result[3])
+print("Число невалидных записей 'university':", lst_result[4])
+print("Число невалидных записей 'work_experience':", lst_result[5])
+print("Число невалидных записей 'academic_degree':", lst_result[6])
+print("Число невалидных записей 'worldwiew':", lst_result[7])
+print("Число невалидных записей 'address':", lst_result[8])
