@@ -198,7 +198,7 @@ class Validator:
                   "university": self.data[index].check_university(),
                   "work_experience": self.data[index].check_work_experience(),
                   "academic_degree": self.data[index].check_academic_degree(),
-                  "worldview": self.data[index].check_worldview(), "adress": self.data[index].check_address()}
+                  "worldview": self.data[index].check_worldview(), "address": self.data[index].check_address()}
         return result.copy()
 
     def count_valid_records(self) -> int:
@@ -233,7 +233,7 @@ class Validator:
 
     def result_file(self, output) -> None:
         """
-            Выполняет валидацию записи по ее ключу.
+            Записывает валидные записи в файл.
             Attributes
             ----------
                 output : str
@@ -248,7 +248,7 @@ class Validator:
                   ensure_ascii=False, sort_keys=False, indent=4)
 
     def count_invalid_arguments(self):
-        '''
+        """
         Считает число невалидных данных: электронная почта, вес, СНИЛС,
         номер паспорта, университет, опыт работы, академическая степень, взгляд
         на мир, адрес.
@@ -257,7 +257,7 @@ class Validator:
         -------
             lst:
                 Список с количеством невалидных парметров.
-        '''
+        """
         lst_res = []
         count_inv_email = 0
         count_inv_weight = 0
@@ -310,9 +310,9 @@ print("Общее число невалидных записей:", invalid)
 print("Число невалидных записей 'email':", lst_result[0])
 print("Число невалидных записей 'weight':", lst_result[1])
 print("Число невалидных записей 'snils':", lst_result[2])
-print("Число невалидных записей 'pasport_number':", lst_result[3])
+print("Число невалидных записей 'passport_number':", lst_result[3])
 print("Число невалидных записей 'university':", lst_result[4])
 print("Число невалидных записей 'work_experience':", lst_result[5])
 print("Число невалидных записей 'academic_degree':", lst_result[6])
-print("Число невалидных записей 'worldwiew':", lst_result[7])
+print("Число невалидных записей 'worldview':", lst_result[7])
 print("Число невалидных записей 'address':", lst_result[8])
